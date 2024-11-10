@@ -78,15 +78,14 @@ clearInterval(timer);
  totalAttempts += attempts; // Soma as tentativas do jogo atual
 
 if (currentGame === comidasFotos) {
-alert("Parabéns! Você concluiu o jogo de alimentação!");
-alert("Faça escolhas sempre saudáveis, saúde em primeiro lugar!")
+alert("Parabéns! Você concluiu o jogo de alimentação! Faça escolhas sempre saudáveis, saúde em primeiro lugar.");
+
 currentGame = plantasFotos;
 document.getElementById("game-title").innerText = "Plantas Medicinais";
 resetGame();
 } else {
 // Exibe a mensagem final ao completar os dois jogos
-alert(`Parabéns, você concluiu os dois jogos de alimentação e plantas medicinais em ${totalAttempts} tentativas! `);
-alert("A vida é bem melhor com boas escolhas. Pratique essas mudanças no seu dia a dia.")
+alert(`Parabéns, você concluiu os dois jogos de alimentação e plantas medicinais em ${totalAttempts} tentativas! A vida é bem melhor com boas escolhas. Pratique essas mudanças no seu dia a dia.`);
 totalAttempts = 0; // Reinicia o contador total de tentativas
 currentGame = comidasFotos; // Retorna ao primeiro jogo
 document.getElementById("game-title").innerText = "Comidas Saudáveis";
