@@ -80,14 +80,14 @@ clearInterval(timer);
 if (currentGame === comidasFotos) {
 alert("Parabéns! Você concluiu o jogo de Comidas!");
 currentGame = plantasFotos;
-document.getElementById("game-title").innerText = "Jogo da Memória - Plantas Medicinais";
+document.getElementById("game-title").innerText = "Plantas Medicinais";
 resetGame();
 } else {
 // Exibe a mensagem final ao completar os dois jogos
 alert(`Parabéns, você concluiu os dois jogos em ${totalAttempts} tentativas! Viva a Alimentação Saudável!`);
 totalAttempts = 0; // Reinicia o contador total de tentativas
 currentGame = comidasFotos; // Retorna ao primeiro jogo
-document.getElementById("game-title").innerText = "Jogo da Memória - Comidas Saudáveis";
+document.getElementById("game-title").innerText = "Comidas Saudáveis";
   resetGame();
 }
 }
