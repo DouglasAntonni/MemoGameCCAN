@@ -104,26 +104,14 @@ left: 0;
                 max-width: 500px;
             }
         }
-
-/* Footer */
 .footer {
-background: #7303c0;
 color: #ffffff;
 text-align: center;
 padding: 20px;
-border-top-left-radius: 20px;
-border-top-right-radius: 20px;
+
 font-size: 0.9em;
     }
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
-        padding: 10px 0;
-        background-color: #03001e;
-        color: #fff;
-    }
+
     .footer p {
  margin-bottom: 10px;
     }
