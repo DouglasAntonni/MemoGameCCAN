@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: "Comic Neue", cursive;
 }
 
 /* Mobile-First CSS */
@@ -170,4 +170,105 @@ h2 {
 
 .icon img:hover {
     transform: scale(1.2);
+}
+.reset-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+    transition: background 0.3s;
+}
+
+.reset-btn:hover {
+    background: #388E3C;
+}
+
+
+/* Estilo do parágrafo com créditos */
+.credits {
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+    
+    margin-top: 20px;
+}
+
+/* Estilo para o link do desenvolvedor */
+.developer-link {
+    color: #1e90ff; /* Cor vibrante */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold;
+    transition: all 0.3s ease; /* Animação suave para hover */
+}
+
+/* Efeito de hover no link */
+.developer-link:hover {
+    color: #ff6347; /* Altera a cor do link para laranja ao passar o mouse */
+    text-decoration: underline; /* Adiciona o sublinhado quando passar o mouse */
+}
+/* Estilo geral para a mensagem de conclusão */
+.game-complete {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Estilo para o título */
+.game-complete h2 {
+    font-size: 32px;
+    color: #2ecc71; /* Cor verde para indicar sucesso */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os parágrafos */
+.game-complete p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Estilo para a mensagem de redirecionamento */
+.game-complete .Redirect {
+    font-weight: bold;
+    font-size: 20px;
+    color: #3498db; /* Cor azul para destacar a ação */
+}
+
+/* Estilo para o container do carregamento */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilo do spinner (carregando) */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+/* Animação de rotação do spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
