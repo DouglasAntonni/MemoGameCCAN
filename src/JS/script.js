@@ -83,10 +83,11 @@ function checkMatch() {
                 <div class="loading-container">
                 <h2>Você completou os dois jogos com ${totalAttempts} tentativas no total!</h2>
                 <p>Parabéns! Agora, siga em frente com escolhas mais saudáveis.</p>
+                 <p class="Redirect">Redirecionando para a página de agradecimento...</p>
+                        
                 <div class="spinner">
                 
-                    <p class="Redirect">Redirecionando para a página de agradecimento...</p>
-                        
+                   
                         </div>
                     </div>
                 `;
