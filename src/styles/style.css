@@ -210,65 +210,53 @@ h2 {
 .developer-link:hover {
     color: #ff6347; /* Altera a cor do link para laranja ao passar o mouse */
     text-decoration: underline; /* Adiciona o sublinhado quando passar o mouse */
+
 }
-/* Estilo geral para a mensagem de conclusão */
-.game-complete {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    margin: 50px auto;
-    font-family: Arial, sans-serif;
+/* Mensagem de Redirecionamento */
+.Redirect {
+    font-size: 14px;
     color: #333;
-}
-
-/* Estilo para o título */
-.game-complete h2 {
-    font-size: 32px;
-    color: #2ecc71; /* Cor verde para indicar sucesso */
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    align-items: center;
+    text-align: center;
 }
 
-/* Estilo para os parágrafos */
-.game-complete p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-/* Estilo para a mensagem de redirecionamento */
-.game-complete .Redirect {
-    font-weight: bold;
-    font-size: 20px;
-    color: #3498db; /* Cor azul para destacar a ação */
-}
-
-/* Estilo para o container do carregamento */
+/* Container do Spinner */
 .loading-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
-/* Estilo do spinner (carregando) */
+/* Spinner (Círculo giratório) */
 .spinner {
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid #3498db;
+    border: 6px solid #f3f3f3; /* Cor do fundo */
+    border-top: 6px solid #4CAF50; /* Cor da linha que gira */
     border-radius: 50%;
     width: 40px;
     height: 40px;
-    animation: spin 1s linear infinite;
+    animation: spin 2s linear infinite; /* Aplicando animação de rotação */
+}
+/* Garante que o conteúdo da página se torna visível de forma suave */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
-/* Animação de rotação do spinner */
+/* Definindo a animação do spinner */
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+
+
