@@ -81,10 +81,10 @@ function checkMatch() {
                 const gameContainer = document.querySelector(".game");
                 gameContainer.innerHTML = `
                 <div class="loading-container">
-                <div class="spinner">
-                <h2>Jogo Completo!</h2>
-                <p>Você completou os dois jogos com ${totalAttempts} tentativas no total!</p>
+                <h2>Você completou os dois jogos com ${totalAttempts} tentativas no total!</h2>
                 <p>Parabéns! Agora, siga em frente com escolhas mais saudáveis.</p>
+                <div class="spinner">
+                
                     <p class="Redirect">Redirecionando para a página de agradecimento...</p>
                         
                         </div>
